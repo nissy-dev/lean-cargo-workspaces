@@ -1,0 +1,16 @@
+[workspace]
+members = [
+    "crates/*",
+]
+
+[workspace.package]
+license = "MIT"
+
+[workspace.dependencies]
+nissy_a = { version = "0.0.1", path = "crates/nissy_a" }
+nissy_b = { version = "0.0.1", path = "crates/nissy_b" }
+nissy_c = { version = "0.0.1", path = "crates/nissy_c" }
+nissy_d = { version = "0.0.1", path = "crates/nissy_d" }
+nissy_e = { version = "0.0.1", path = "crates/nissy_e" }
+
+nissy_f = { path = "crates/f" }

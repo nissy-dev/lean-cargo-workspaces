@@ -1,0 +1,12 @@
+[package]
+name = "nissy_c"
+version = "0.0.1"
+edition = "2021"
+description = "nissy_c"
+license.workspace = true
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+nissy_a = { workspace = true }
+nissy_b = { workspace = true }
