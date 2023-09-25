@@ -4,7 +4,7 @@
 set -eo pipefail
 
 # Usage:
-#   ./scripts/publish.sh [--execute]
+#   ./scripts/publish-crates.sh [--execute]
 # Options:
 #   --execute: Execute the publish command, otherwise dry-run (default)
 

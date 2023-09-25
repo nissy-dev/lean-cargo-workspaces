@@ -1,0 +1,18 @@
+name: Release
+on:
+  push:
+    tags:
+      - '*'
+  workflow_dispatch:
+
+jobs:
+  publish:
+    name: Publish
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Login to crate.io
+        run: cargo login ${{ secrets.CRATES_IO_TOKEN }}
+      - name: Publish crates to crates.io
+        run: ./scripts/publish-crates.sh --execute

@@ -1,1 +1,1 @@
-# lean-cargo-workspaces
+# learn-cargo-workspaces
